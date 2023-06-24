@@ -1,0 +1,15 @@
+{
+	"server": true,
+	"node_name": "consul-server-1",
+	"ui_config": {
+		"enabled": true
+	},
+	"data_dir": "/tmp",
+	"addresses": {
+		"http": "0.0.0.0"
+	},
+	"retry_join": [
+		"consul-server-2",
+		"consul-server-3"
+	]
+}
